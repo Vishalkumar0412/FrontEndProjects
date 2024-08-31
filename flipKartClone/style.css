@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 67px;
+    display: flex;
+    background-color: aqua;
+    display: flex;
+
+
+}
+
