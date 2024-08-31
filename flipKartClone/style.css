@@ -96,14 +96,17 @@ header .seachContainer input
     border-radius: 10px;
     outline: 0;
     border: 0;
-transition: transform 0.1s ease-in;
-z-index: 1;
+
+    z-index: 1;
 }
 .loginDropDown .btnLogin:hover{
    background-color: #005bb5;
    color: white;
    transform: scale(0.99);
 
+}
+.loginDropDown .btnLogin .arrow{
+   transition: all 0.5s ease;
 }
 .loginDropDown .btnLogin .arrow:hover{
     transform: rotate(-180deg);
@@ -153,3 +156,141 @@ z-index: 1;
     color: blue;
     font-weight: bold;
 }
+
+
+/* catagory manu */
+
+.CatagaoryContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 10px;
+    height: 126px;
+    padding: 10px 30px;
+}
+.CatagaoryContainer .catagaryType{
+    display: flex;
+    flex-direction: column;
+    height: 126px;
+    width: 130px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.CatagaoryContainer .catagaryType span{
+font-weight: 500;
+margin-top: 5px;
+text-align: center;
+font-size: 16px;
+text-wrap: nowrap;
+}
+.bannerContainer{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    overflow: hidden;
+    height: 221px;
+    
+}
+.bannerContainer img{
+    width: 100%;
+}
+.bestSmartPhone{
+    background-color: transparent;
+    display: flex;
+    height: 359px
+}
+.bestSmartPhone .divProduct{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: white;
+    overflow: hidden;
+
+    margin-right: 10PX;
+}
+.divProduct .divHeading{
+    padding-left: 30px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.divImagesContainer{}
+.divOfferImage{
+    display: flex;
+    height: 359px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-left: 5PX;
+    padding: 10PX 0;
+    width: 209px;
+    padding: 5px;
+}
+.divOfferImage img{
+
+    height: 85%;
+    width: auto;
+   
+}
+.divImagesContainer{
+    display: flex;
+    padding: 5px;
+
+
+}
+.divImages{
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F4FF;
+    align-items: center;
+    justify-content: center;
+    height: 256px;
+    margin: 5px;
+    overflow: hidden;
+    min-width: 208px;
+   
+
+}
+.divImages img{
+    height: 186px;
+    margin-bottom: 6px;
+    
+}
+.divImages img:hover{
+   transform: scale(.98);
+    
+}
+.divImages span{
+    padding: 3px;
+
+}
+.divImages .priceDN{
+    font-weight: bold;
+}
+.dealPosters{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.dealPosters img{
+   width: 32%;
+   margin: 0.2%;
+}
+/* footer ki bari */
+footer{
+    background-color: #110b0b;
+    height: 354px;
+}
+
+/* resoponsive */
+@media (max-width: 600px){
+.CatagaoryContainer{
+    overflow: hidden;
+}
+}
+  
