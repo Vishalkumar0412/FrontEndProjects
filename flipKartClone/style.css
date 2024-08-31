@@ -1,13 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: #F0F4FF;
 }
 header {
     height: 67px;
     display: flex;
     background-color: aqua;
     display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-around;
 
 
 }
+header .logoContainer{
+    padding: 20px 5px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px;
+    
+}
+header .seachContainer{
+    width: 584px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F4FF;
+    border-radius: 5px;
+    cursor: pointer;
 
+}
+header .seachContainer .searchIcon{
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #646b7e;
+}
+header .seachContainer input
+{
+    height: 100%;
+    outline: 0;
+    border: 0;
+    color: #000;
+    font-size: 16px;
+    flex: 1;
+    background-color: transparent;
+
+}
+/* action bar  */
+.actionBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin: 10px 0;
+    cursor: pointer;
+    flex: 3;
+    
+
+}
+.actionElem{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+.actionElem span{
+ padding: 0 5px;
+}
+.dropDownContent{
+ 
+}
+.loginDropDown{
+    position: relative;
+}
+.loginDropDown .btnLogin{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   background-color: transparent;
+   padding: 5PX 10px;
+  height: 44px;
+    width:  111px;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+transition: transform 0.1s ease-in;
+z-index: 1;
+}
+.loginDropDown .btnLogin:hover{
+   background-color: #005bb5;
+   color: white;
+   transform: scale(0.99);
+
+}
+.loginDropDown .btnLogin .arrow:hover{
+    transform: rotate(-180deg);
+}
+
+.btnLogin{
+    display: flex;
+    font-size: 16PX;
+}
+.dropDownContent{
+   position: absolute;
+   display: none;
+   background-color: white;
+   border-radius: 5px;
+   top: 40px;
+   
+   flex-direction: column;
+   width: 250px;
+   padding: 20px 10px;
+}
+#linkDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+#linkDiv a{
+    display: flex;
+    align-items: center;
+   padding: 2px 5px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+}
+#linkDiv a:hover{
+  background-color: #F0F4FF;
+}
+.dropDownContent .signUp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; height: 40px;
+    font-size: 17px;
+    padding-bottom: 20px;
+    border-bottom: #cfcfcf solid 1px;
+}
+.dropDownContent .signUp #signUpText{
+    color: blue;
+    font-weight: bold;
+}
