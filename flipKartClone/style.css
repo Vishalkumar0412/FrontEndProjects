@@ -5,10 +5,12 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 body{
     background-color: #F0F4FF;
     overflow-x:hidden ;
+
 }
 header {
     height: 67px;
@@ -340,16 +342,23 @@ footer{
     border-left: 1px solid #878787; 
     padding-left: 30px;
 }
+/* scrollBar style */
+::-webkit-scrollbar {
+  width: 5px;
+}
 
 /* resoponsive */
 @media (max-width: 600px){
 .CatagaoryContainer{
-   width: 100%;
-   overflow: hidden;
+display: none;
 
 }
-.CatagaoryContainer .catagaryType{
-    
+CatagaoryContainer .catagaryType{
+    display: block;
+}
+
+header .logoContainer{
+    display: block;
 }
 .bannerContainer{
     width: 100%;
@@ -438,5 +447,6 @@ footer{
 .bottomFooter div{
     margin: 20px 10px;
 }
+b
 }
   
