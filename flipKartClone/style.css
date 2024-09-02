@@ -8,6 +8,7 @@
 }
 body{
     background-color: #F0F4FF;
+    overflow-x:hidden ;
 }
 header {
     height: 67px;
@@ -281,10 +282,63 @@ text-wrap: nowrap;
    width: 32%;
    margin: 0.2%;
 }
+
+/* footter */
 /* footer ki bari */
 footer{
     background-color: #110b0b;
     height: 354px;
+}
+.footerBlocks{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.footerblockHeading{
+    color: #878787;
+    margin-bottom: 15px;
+}
+.mainFooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 40px 60px;
+    
+}
+.footerBlocks a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 0px;
+}
+.footerBlocks a:hover{
+    text-decoration: underline white;
+}
+.bottomFooter{
+    height: 69px; 
+    background-color:#110b0b ;
+    border-top: 1px solid #878787;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bottomFooter div{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+
+}
+.bottomFooter div span:first-child{
+    color: yellow;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.bottomFooter div span{
+    cursor: pointer;
+}
+#Customer{
+    border-left: 1px solid #878787; 
+    padding-left: 30px;
 }
 
 /* resoponsive */
@@ -357,30 +411,32 @@ header .seachContainer{
   width: 60%;
   justify-content: start;
 }
+footer{
+    height: auto;
 }
-  
-/* footter */
-.footerBlocks{
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-}
-.footerblockHeading{
-    color: #878787;
-    margin-bottom: 15px;
-}
+
 .mainFooter{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding: 40px 60px;
+    flex-direction: column;
+}
+#Customer{
+    border-left: 0;
+    padding-left: 0px;
+}
+.footerBlocks{
+    margin-top: 20px;
     
 }
 .footerBlocks a{
-    color: white;
-    text-decoration: none;
-    padding: 5px 0px;
+    font-size: 15px;
 }
-.footerBlocks a:hover{
-    text-decoration: underline white;
+.bottomFooter{
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    padding-left: 30px;
 }
+.bottomFooter div{
+    margin: 20px 10px;
+}
+}
+  
